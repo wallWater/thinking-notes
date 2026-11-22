@@ -1,0 +1,80 @@
+/* ============================================================
+   主题变量 —— 与设计稿一致，改这里就能全局换色
+   ============================================================ */
+:root {
+  --bg: #ffffff;
+  --text: #222222;
+  --text-secondary: #666666;
+  --text-tertiary: #999999;
+  --divider: #e8e8e8;
+  --divider-soft: #f0f0f0;
+  --accent: #4477aa;
+  --accent-hover: #3a688f;
+  --surface: #ffffff;
+  --card-border: #e8e8e8;
+  --placeholder: #999999;
+  --checkbox-border: #cccccc;
+  --on-accent: #ffffff;
+
+  --font-cn: 'Noto Sans SC', 'Source Han Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --font-en: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+:root[data-theme='dark'] {
+  --bg: #121212;
+  --text: #e5e5e5;
+  --text-secondary: #999999;
+  --text-tertiary: #666666;
+  --divider: #2a2a2a;
+  --divider-soft: #2a2a2a;
+  --accent: #639cd9;
+  --accent-hover: #7db0e6;
+  --surface: #1a1a1a;
+  --card-border: #2a2a2a;
+  --placeholder: #666666;
+  --checkbox-border: #666666;
+  --on-accent: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  line-height: 1.7;
+}
+
+body {
+  font-family: var(--font-cn);
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+.en {
+  font-family: var(--font-en);
+}
+
+/* 页面进入过渡 */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.18s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
